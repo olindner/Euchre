@@ -13,7 +13,6 @@ public class Driver : MonoBehaviour
     void Start()
     {
         Debug.Log("Start is called");
-        Debug.Log("Damn Yohan got a DUMPY huh?");
 
         Player You = (Player)ScriptableObject.CreateInstance("Player");
         Player Toph = (Player)ScriptableObject.CreateInstance("Player");
@@ -31,25 +30,7 @@ public class Driver : MonoBehaviour
         ActivePlayer = You; //Eventually random or first black jack
     }
 
-    private static void ReadKey()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            print("1 was pressed");
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            print("2 was pressed");
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            print("3 was pressed");
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            print("4 was pressed");
-        }
-    }
+    
 
     void Update()
     {

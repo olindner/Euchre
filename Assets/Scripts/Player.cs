@@ -22,7 +22,21 @@ public class Player : ScriptableObject
     {
         //Eventually add logic for computer to determine if ordering
         Debug.Log($"Order up {upturnedCard.Print()}?");
+        return ReadOrder();
+    }
 
-        return true;
+    private static bool ReadOrder()
+    {
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            Debug.Log("Y was selected");
+            return true;
+        }
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            Debug.Log("Y was selected");
+            return false;
+        }
+        return false;
     }
 }
